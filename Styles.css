@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #000;
+  position: fixed;
+  top: 0;left: 0;right: 0;
+  padding: 1rem  0;
+  z-index: 1;
+}
+
+.header.active {
+  background-color: #fff;
+  transition: all .5s linear;
+}
+
+.header.active a{
+  color: #222;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  
+}
+
+.navbar ul li a {
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1.1px;
+}
+
+.navbar ul li a.current,
+.navbar ul li a:hover {
+  color: #4cedce;
+}
+
+.hero {
+  margin: 0;
+  background-image: url(./img/bg.jpg);
+  background-position: top center;
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text {
+  margin: 3rem 0;
+}
+
+.text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #FDbc3c;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
